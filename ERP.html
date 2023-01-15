@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ERP.css">
+  <title>Product Landing Page</title>
+  <script type = "text/javascript" src="ERP.js"></script>  
+</head>
+
+<body onload="countDownTimer()">
+  <div class="container">
+    <nav class="navbar">
+      <label for="countdown">Remaining Time : &nbsp;</label>
+      <p id="countdown"></p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#register">Contact</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+    <!-- Home page -->
+    <section id="home">
+      <div class="home-tags">
+        <h1>Eazy ERP 4.0</h1>
+        <h4>Bridge towards Simpler Operations!</h4>
+        <p>Coming on Nov 22, 2022</p><br>
+        <button class="button1"><a href="#register">Reserve your seat!</a></button>
+        <button class="button2"><a href="https://www.youtube.com/watch?v=6qys-562kp4" target="_blank">Know more</a></button>
+      </div>
+    </section>
+    <!-- About page -->
+    <section id="about">
+      <h1>About Us</h1>
+      <p>
+        Enterprise Resource Planning System, a software which made a significant impact in the life of Indian Manufacturers by 
+        remodeling their existing manual system of working to Automating it,<br>
+
+        A system which was ideally designed to track the activities has travelled leaps and miles from being a mere
+        tracking system to a virtual member that monitors, tracks and guides the users in order to streamline and
+        maintain the operational efficiency of the business.<br>
+
+        Ever Since 2001, the market has been penetrated with hundreds of ERP players, 
+        everyone stating themselves as the best. As we digged down more and more we realized that most of the small
+       & mid size companies still resisting to move towards IT due to multiple reason such as budget constraints, 
+       hassle of using 2 different softwares, Security issues, to name a few<br>
+
+       That is how Eazy came into picture with a vision of standing out from Rest with its unique preposition
+        and simultaneously catering the key challenges of SME Manufacturers thereby making their lives Easy!
+       This led to the launch of India’s 1st Tally Integrated ERP, Eazy ERP in 2007. An ERP which came with the simplicity of Tally and Power of ERP
+     </p>     
+    </section>
+    <!-- Register page -->
+    <section id="register">
+      <div class="register-seat">
+        <h1> RESERVE YOUR SEAT</h1>
+        <form class="form-details" name="register-form">
+          <input type="text" id="fname" class="form-control-container" placeholder="First Name" name="fname" required><br><br>
+          <input type="text" id="lname" class="form-control-container" placeholder="Last Name" name="lname" required><br><br>
+          <input type="tel" id="phone" class="form-control-container" name="phone" placeholder="Mobile Number" pattern="[0-9]{10}" required><br><br>
+          <input type="email" id="email" class="form-control-container" placeholder="E-mail Address" name="email" required><br><br>
+          <button type="button" value="submit" onclick="submitForm()">Register</button>          
+        </form>
+        <p id="success"></p>
+        <p id="error"></p>
+      </div>
+        <div class="register-contact">
+          <div class="register-contact-phone">
+            <img id="phoneid" src="mobile.png" alt="contact number">
+            <h6>Contact: 9875432100</h6>
+          </div>
+          <div class="register-contact-email">
+            <img id="emailid" src="email.png" alt="email">
+            <h6>Email: ERP@test.com</h6>
+          </div>
+        </div>         
+    </section>
+  </div>
+</body>
+</html>

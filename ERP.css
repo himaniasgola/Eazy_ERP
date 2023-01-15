@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+
+.navbar{
+  position: fixed;
+  top:0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 8%;
+  background: rgba(53, 52, 90, 0.7);
+  flex-direction: row;
+}
+
+.navbar label{
+  width: 10%;
+  align-self: center;
+  margin-left: 2%;
+  color: #cad8db;
+}
+.navbar p{
+  width: 20%;
+  align-self: center;
+  color: #cddce0;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  width: 60%;
+  justify-content: right;
+}
+
+.navbar ul li{
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: large;
+  color: #f7f7f7;
+}
+
+section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 100%;
+height: 100vh;
+scroll-snap-align: center;
+}
+
+section h1{
+  font-size: 1.5rem;
+}
+
+section h4{
+  font-size: 1.0rem;
+}
+
+section#home{
+  background: url('ERPSection.jpg') no-repeat center center/cover;
+  align-items: flex-start;
+}
+section#home div{
+  width: 40%;
+  height: 50%;
+}
+section#home h1{ 
+  margin-left: 10%;
+  font-size: 3.5rem;
+  animation-name: textzoom;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+@keyframes textzoom{
+  0%{
+    font-size: 2.5rem;
+  }
+  100%{
+    font-size: 3.5rem;
+  }
+}
+section#home h4{ 
+  margin-left: 5%;
+  font-size: 1.6rem;
+  color: rgb(127, 190, 190);
+}
+section#home p{ 
+  margin-left: 5%;
+  font-size: 1.4rem;
+  color: rgb(23, 238, 209);
+}
+section#home .button1{ 
+  margin-left: 8%;
+  margin-bottom: 8%;
+  font-size: 1.2rem;
+  border: pink;
+  border-radius: 20px;
+  width: 45%;
+  height: 12%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(83, 73, 223);
+}
+section#home .button2{ 
+  margin-left: 8%;
+  margin-bottom: 8%;
+  font-size: 1.2rem;
+  border: pink;
+  border-radius: 20px;
+  width: 25%;
+  height: 12%;
+  cursor: pointer;
+  background-color: rgb(83, 73, 223);
+}
+section#home .button1 a{ 
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+section#home .button2 a{ 
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 0;
+}
+section#about{
+  background: #fff;
+  color: #333;
+}
+section#about h1{ 
+  font-size: 45px;
+  color: rgb(80, 17, 226);
+}
+section#about p{
+  text-align: left;
+  width: 70%;
+  font-family:'Times New Roman', Times, serif;
+  font-size: large;
+}
+section#register{
+  background: #fff;
+  justify-items: center;
+  font-style: normal;
+}
+
+.register-contact{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.register-contact img{
+  height: 60px;
+  width: 60px;
+}
+
+.register-contact h6{
+  font-size: 18px;
+  color: black;
+}
+
+.register-contact-phone{
+  margin-right: 50px;
+}
+
+
+section#register h1{
+  color: #333;
+  font-size: 35px;
+}
+
+section#register form{
+  color: #333;
+}
+section#register form input{
+ height: 3rem;
+ width:  40rem;
+ border: none;
+ text-align: center;
+ font-size: 1rem;
+ background: lightgrey;
+}
+section#register form button{
+  height: 3rem;
+  width:  10rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  background: rgb(105, 127, 201);
+  border: 0.5px solid rgb(105, 127, 201); ;
+  border-radius: 15px;
+ }
+
+ section#register #success{
+  color: green;
+ }
+
+ section#register #error{
+  color: red;
+ }
+
+
+
